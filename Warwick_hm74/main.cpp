@@ -1,14 +1,17 @@
-//
-//  main.cpp
-//  Warwick_hm74
-//
-//  Created by Александр Тихонов on 11.03.2022.
-//
-
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+#define PRINT_JOE
+//#define PRINT_BOB
+
+int main()
+
+{
+#ifdef PRINT_JOE
+ std::cout << "Joe" << std::endl;
+#endif
+
+#ifdef PRINT_BOB
+ std::cout << "Bob" << std::endl;
+#endif
+ return 0;
 }
